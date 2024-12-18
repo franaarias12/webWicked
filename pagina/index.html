@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos.css" />
+    <script src="./script.js" defer></script>
+    <title>Productos</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-top">
+        <img id="carrito-icon" src="../img/carrito.png" alt="Carrito" />
+        <h1>Bienvenido a la ShOz</h1>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <nav class="menu-lateral">
+        <ul>
+          <li>
+            <div class="producto-item" data-nombre="Varita Glinda" data-precio="30.99">
+              <div class="producto-info">
+                <strong>Varita Glinda</strong>
+                <p>La varita de Glinda, la Bruja Buena del Norte, es un símbolo de bondad y magia pura. Con su diseño elegante y brillante, coronada por una estrella resplandeciente, refleja su poder para guiar y proteger, emanando esperanza y luz en el mundo de Oz.</p>
+                <img src="../img/varita_prod1.jpg" alt="">
+                <span class="precio">30.99</span>
+                <button class="agregar-btn">Agregar</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="producto-item" data-nombre="Chapines de rubi" data-precio="50.99">
+              <div class="producto-info">
+                <strong>Chapines de rubi</strong>
+                <p>Los chapines de rubí, icónicos zapatos mágicos, combinan estilo y poder en el mundo de Oz. Brillando intensamente con cada paso, otorgan protección y la habilidad de viajar grandes distancias, simbolizando el deseo de volver a casa y la fuerza interior de quien los usa.</p>
+                <img src="../img/chapines_prod2.jpg" alt="">
+                <span class="precio">50.99</span>
+                <button class="agregar-btn">Agregar</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="producto-item" data-nombre="Sombrero BMO" data-precio="30.99">
+              <div class="producto-info">
+                <strong>Sombrero de la bruja malvada de oeste</strong>
+                <p>El sombrero de la Bruja Malvada del Oeste es un icónico accesorio puntiagudo que refleja su oscura personalidad y poder. Con un diseño imponente y misterioso, simboliza autoridad y magia oscura en el mundo de Oz, siendo un emblema de su temida presencia.</p>
+                <img src="../img/sobrero_prod3.jpg" alt="">
+                <span class="precio">30.99</span>
+                <button class="agregar-btn">Agregar</button>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="producto-item" data-nombre="Pack Musica Wicked" data-precio="90.99">
+              <div class="producto-info">
+                <strong>Pack Musica del Sountrack Wicked</strong>
+                <p>El pack del soundtrack de Wicked es un producto de colección que combina elementos musicales y visuales en un diseño cuidadosamente elaborado. Contiene vinilos de colores temáticos, un libro especial con arte e información detrás de la producción, y accesorios únicos como un gorro, banderines y posiblemente una réplica de una carta o mapa. Es perfecto para fans apasionados del musical y para quienes disfrutan coleccionar ediciones limitadas.</p>
+                <img src="../img/pack_prod4.jpeg" alt="">
+                <span class="precio">90.99</span>
+                <button class="agregar-btn">Agregar</button>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="lista-compra" id="lista-compra" style="display: none">
+        <h2>Lista de la compra</h2>
+        <ul id="compra-lista"></ul>
+        <button id="comprar-btn">Comprar</button>
+      </div>
+
+      <!-- Modal del Ticket -->
+      <div id="ticket-modal" class="ticket-modal">
+        <div class="ticket-contenido">
+          <h2>Resumen de la Compra</h2>
+          <ul id="ticket-lista">
+            <!-- Los productos se agregarán aquí mediante JavaScript -->
+          </ul>
+          <p id="total-pagar">Total: $0</p>
+          <button id="cerrar-ticket">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

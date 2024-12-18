@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="registro.css">
+    <script src="validaciones.js"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <div class="registro">
+        <div class="app-title">
+            <h1>Registro</h1>
+        </div>
+        <div class="form_registro">
+            <input type="text" placeholder="Usuario" id="usuarioInput">
+            <input type="email" placeholder="Correo Electrónico" id="emailInput">
+            <input type="password" placeholder="Contraseña" id="passwordInput">
+            <input type="text" placeholder="Teléfono" id="telefonoInput">
+        </div>
+
+        <div id="errorMessages" class="error"></div> 
+
+        <div class="botonRegistro">
+            <button id="btnRegistro" onclick="registrar()">Registrarse</button>
+        </div>
+        <a id="login" href="./inicio_sesion.html">Inicia Sesión</a>
+    </div>
+</body>
+</html>

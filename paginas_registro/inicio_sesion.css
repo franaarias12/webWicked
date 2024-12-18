@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("../img/fondo_inicio_sesion.jpg");
+    background-size: cover;
+ 
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #ff5be6; 
+}
+
+/* Estilo para el formulario de inicio de sesión */
+.login {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.app-title h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form_login input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.form_login input:focus {
+    border-color: #4CAF50;
+    outline: none; 
+}
+
+.botonInicio button {
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.botonInicio button:hover {
+    background-color: #ff5be6;
+}
+
+.botonInicio button:active {
+    transform: scale(0.98);
+}
+
+/* Mensajes de error */
+.errormensajes{
+    color: red; 
+    font-size: 14px;
+    margin-top: 10px;
+}
+

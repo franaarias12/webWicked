@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(../img/fondo_registro.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.registro {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.app-title h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilo para el formulario de registro */
+.form_registro {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form_registro input {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.form_registro input:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+/* Mensajes de error */
+.errorMessages {
+    color: red; 
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Botón de registro */
+.botonRegistro {
+    margin-top: 20px;
+}
+
+.botonRegistro button {
+    width: 100%;
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.botonRegistro button:hover {
+    background-color: rgb(250, 75, 168); 
+}
+
+#login {
+    margin-top: 10px;
+    margin-left: 30%;
+    color: #4CAF50;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#login:hover {
+    color: rgb(250, 75, 168); 
+}
+
+
+
+
